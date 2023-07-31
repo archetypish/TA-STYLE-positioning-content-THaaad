@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Page Exercise</title>
+    <title>Default Layout</title>
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="brand-name col-1">Company Name</div>
-        <nav class="col-2 nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header">
+      <a class="logo" href="#">Brand Name</a>
+      <nav class="nav">
+        <a class="nav-item" href="#">Item 1</a>
+        <a class="nav-item" href="#">Item 2</a>
+        <a class="nav-item" href="#">Item 3</a>
+      </nav>
     </header>
     <main>
-      <div class="container">
-        <article>
-          <div class="col-1">
-            <h2>Lorem, ipsum.</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              obcaecati dolores eum nobis nostrum maiores error quisquam dolorem
-              id ipsa!
-            </p>
-          </div>
-          <img class="col-2" src="./assets/media/pic-01.jpg" alt="" />
-        </article>
-      </div>
+      <article class="main-content">
+        <div class="col-3-5">
+          <h1 class="heading">Main Content</h1>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            similique quos nemo aperiam perspiciatis magni quia deleniti autem
+            velit nesciunt fugit voluptatem consectetur voluptates possimus at
+            facilis, sapiente a beatae, magnam corporis. Distinctio aperiam quos
+            excepturi et asperiores a voluptates?
+          </p>
+        </div>
+        <div class="col-2-5">
+          <img src="./assets/media/pic-01.jpg" alt="Some Media" />
+        </div>
+      </article>
     </main>
-    <footer>
-      <div class="container">&copy; Company Name</div>
+    <footer class="footer">
+      <small>Footer</small>
     </footer>
   </body>
 </html>
